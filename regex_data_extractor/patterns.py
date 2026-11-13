@@ -6,14 +6,13 @@ from __future__ import annotations
 import re 
 
 PATTERNS = {
-    # local part, mandatory @, domain labels, TLD of 2+ letters
+    # local part, mandatory @, domain labels, and letters
     "email": r"\b[\w.+-]+@[\w-]+(?:\.[\w-]+)*\.[A-Za-z]{2,}\b",
 
     # http/https, domain, optional path; the path must end on a word
-    # character or "/" so trailing punctuation ("see https://x.com.") is excluded
     "url": r"https?://[\w-]+(?:\.[\w-]+)+(?:/\S*[\w/#?=&%-])?",
 
-    # (123) 456-7890, 123-456-7890, 123.456.7890; not part of a longer digit run
+    # (123) 456-7890, 123-456-7890, 123.456.7890; not part of a longer digit run and also there is addition of negative behindlook feature that prevent invalidation
     "phone": r"(?<!\d)(?:\(\d{3}\)\s?|\d{3}[-.])\d{3}[-.]\d{4}(?!\d)",
 
     # four groups of four digits separated by a space or dash
