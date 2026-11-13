@@ -1,9 +1,9 @@
 """Regular expressions for extracting common data types from text.
-
-Every group is non-capturing (?:...) so re.findall returns whole matches.
+From the text provided the logic will find the correct match.This is where the whole work of extraction takes place
+so re.findall returns all correct matches
 """
 from __future__ import annotations
-import re
+import re 
 
 PATTERNS = {
     # local part, mandatory @, domain labels, TLD of 2+ letters
@@ -26,7 +26,7 @@ PATTERNS = {
     # so "a < b > c" and "<3" are not tags
     "html": r"</?[A-Za-z][^<>]*>",
 
-    # # followed by a letter, not preceded by a word character
+    # # followed by a letter, not preceded by a word character (lookbehind feature)
     "hashtag": r"(?<!\w)#[A-Za-z]\w*",
 
     # $19.99, $1,234.56, $5; comma groups need exactly 3 digits

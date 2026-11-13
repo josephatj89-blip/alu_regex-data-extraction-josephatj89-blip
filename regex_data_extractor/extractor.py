@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CLI: ./extractor.py <type> "text"  (or  ./extractor.py all "text")"""
+"""For running it in Command Line Interface execute as follows: ./extractor.py <type> "text"  or( ./extractor.py all "text")"""
 import sys
 
 from patterns import PATTERNS, extract
