@@ -9,3 +9,5 @@ My modules are
 Extractor.py works like my main file as it is the entry point of everything.
 Run extractor.py to test how it works
 My regular expressions have been implemented with python.
+For running it;
+./extractor.py all "write your text here"4
