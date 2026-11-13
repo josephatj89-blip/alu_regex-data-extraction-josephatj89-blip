@@ -1,3 +1,18 @@
-email: josephatj89@gmail.com
-phone: 123-456-1234
-time: 15:39
+email: user@example.com
+email: firstname.lastname@company.co.uk
+url: https://www.example.comLinks
+url: https://subdomain.example.org/pageLinks
+phone: (123) 456-7890
+phone: 123-456-7890
+phone: 123.456.7890
+card: 1234 5678 9012 3456
+card: 1234-5678-9012-3456
+time: 14:30
+time: 2:30 PM
+html: <p>
+html: <div class="example">
+html: <img src="image.jpg" alt="description">
+hashtag: #example
+hashtag: #ThisIsAHashtag
+currency: $19.99
+currency: $1,234.56
